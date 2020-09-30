@@ -23,7 +23,7 @@ This guide will lead you through the installation of Ceph storage in an OpenShif
     ```bash
     mkdir -p ~/ceph-workdir
     cp ./openshift-resources/*.yml ~/ceph-workdir
-    INTERNAL_REGISTRY=nexus.your.domain.com:5000
+    LOCAL_REGISTRY=nexus.your.domain.com:5000
     sed -i "s|--LOCAL_REGISTRY--|${LOCAL_REGISTRY}|g" ~/ceph-workdir/cluster.yml
     sed -i "s|--LOCAL_REGISTRY--|${LOCAL_REGISTRY}|g" ~/ceph-workdir/operator-openshift.yml
 
