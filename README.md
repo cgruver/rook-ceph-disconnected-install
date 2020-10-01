@@ -27,7 +27,7 @@ This guide will lead you through the installation of Ceph storage in an OpenShif
     sed -i "s|--LOCAL_REGISTRY--|${LOCAL_REGISTRY}|g" ~/ceph-workdir/cluster.yml
     sed -i "s|--LOCAL_REGISTRY--|${LOCAL_REGISTRY}|g" ~/ceph-workdir/operator-openshift.yml
 
-1. Edit `~/ceph-workdir/ceph/cluster.yml` to reflect the worker nodes that you are using for storage, and the block deviced attached to the nodes
+1. Edit `~/ceph-workdir/cluster.yml` to reflect the worker nodes that you are using for storage, and the block deviced attached to the nodes
 
     Follow the docs here: [Rook Ceph Documentation](https://rook.github.io/docs/rook/v1.4/ceph-cluster-crd.html)
 
