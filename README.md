@@ -154,13 +154,13 @@ From your internet connected workstation or bastion host:
 1. If you want to designate one of your new storage classes as the default for dynamic provisioning:
 
     ```bash
-    oc patch storageclass rook-ceph-block -p '{"metadata": {"annotations":{"storageclass.kubernetes.io/is-default-class":"false"}}}'
+    oc patch storageclass rook-ceph-block -p '{"metadata": {"annotations":{"storageclass.kubernetes.io/is-default-class":"true"}}}'
     ```
 
     __Or:__
 
     ```bash
-    oc patch storageclass rook-ceph-bucket -p '{"metadata": {"annotations":{"storageclass.kubernetes.io/is-default-class":"false"}}}'
+    oc patch storageclass rook-ceph-bucket -p '{"metadata": {"annotations":{"storageclass.kubernetes.io/is-default-class":"true"}}}'
     ```
 
 ### You now have a Ceph cluster capable of provisioning Block or S3 Object storage.
