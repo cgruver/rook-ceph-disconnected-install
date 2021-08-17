@@ -1,3 +1,7 @@
+# Note, this guide is out-of-date
+
+There is a newer guide here: [https://upstreamwithoutapaddle.com/home-lab/rook-ceph/](https://upstreamwithoutapaddle.com/home-lab/rook-ceph/)
+
 # Installing Rook/Ceph on OpenShift in a disconnected network
 
 This guide will lead you through the installation of Ceph storage in an OpenShift cluster which is isolated from internet access
